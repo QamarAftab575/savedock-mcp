@@ -1,0 +1,3 @@
+# The MCP server is a thin client of /api/v1/. It does not need Django, yt-dlp or a database.
+mcp>=2.3,<3
+httpx>=0.28,<1

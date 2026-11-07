@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "savedock-mcp"
+version = "1.0.0"
+description = "Free MCP server for AI agents: download YouTube, Instagram, TikTok, Facebook, X and Pinterest videos or MP3 audio via SaveDock."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+authors = [{ name = "Qamar Aftab" }]
+keywords = ["mcp", "mcp-server", "model-context-protocol", "video-downloader", "youtube-downloader", "mp3", "ai-agents"]
+dependencies = ["mcp>=2.3,<3", "httpx>=0.28,<1"]
+
+[project.urls]
+Homepage = "https://savedock.pro/mcp-server/"
+Repository = "https://github.com/QamarAftab575/savedock-mcp"
+
+[project.scripts]
+savedock-mcp = "mcp_server.__main__:main"
+
+[tool.setuptools]
+packages = ["mcp_server"]
